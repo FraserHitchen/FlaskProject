@@ -14,20 +14,20 @@
 	
 Broken down into the different range of requirements:
 	
-Functional Requirements:
-    - Users will be able to register an account, log in, and then place an order using that account.
-    - Users can edit the information on their account such as email and address.
-    - Admins will be able to get information on users and orders, and will be able to edit and delete the orders of users.
+- Functional Requirements:
+	- Users will be able to register an account, log in, and then place an order using that account.
+	- Users can edit the information on their account such as email and address.
+	- Admins will be able to get information on users and orders, and will be able to edit and delete the orders of users.
 
-Measurable Quality Attributes:
-    - Correctness: The functions of the software should work as expected.
-    - Performance: The software should run well even under stress.
+- Measurable Quality Attributes:
+	- Correctness: The functions of the software should work as expected.
+	- Performance: The software should run well even under stress.
     
-Qualitative Requirements:
-    - Correctness: The functions of the software should work as expected.
-    - Usability: The software should be user-friendly and easy to learn and understand.
-    - Robustness: The system should continue to work with limited behaviour under extreme conditions.
-    - Security: User’s personal information should be kept securely.
+- Qualitative Requirements:
+	- Correctness: The functions of the software should work as expected.
+	- Usability: The software should be user-friendly and easy to learn and understand.
+	- Robustness: The system should continue to work with limited behaviour under extreme conditions.
+	- Security: User’s personal information should be kept securely.
 
 
 
