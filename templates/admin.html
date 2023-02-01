@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Admin Panel{% endblock %}
+{% block content %}
+    <p> All Users:</p>
+    {% for item in values %}
+        <p>ID: {{item._id}}, Name: {{item.name}}, Email: {{item.email}}, Address: {{item.address}}, Admin: {{item.admin}}</p>
+    {% endfor %}
+
+    <hr>
+
+    <p> Search for User Information:</p>
+    <form action="#" method="post">
+        <p>User ID:</p>
+        <p><input type = "number" name = "id" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+
+    {% if user_values: %}
+        <p>ID: {{user_values._id}}, Name: {{user_values.name}}, Email: {{user_values.email}}, Address: {{user_values.address}}, Admin: {{user_values.admin}}</p>
+    {% endif %}
+
+    <hr>
+
+    <p> Search for User Orders:</p>
+    <form action="#" method="post">
+        <p>User ID:</p>
+        <p><input type = "number" name = "uo_id" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+
+    {% if user_orders: %}
+        {% for order in user_orders %}
+            <p>ID: {{order._id}}, User ID: {{order.user_id}}, Type: {{order.type}}, Description: {{order.description}}</p>
+        {% endfor %}
+    {% endif %}
+
+    <hr>
+
+    <p> Search for Specific Order:</p>
+    <form action="#" method="post">
+        <p>Order ID:</p>
+        <p><input type = "number" name = "order_id" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+
+    {% if req_order: %}
+        <p>ID: {{req_order._id}}, User ID: {{req_order.user_id}}, Type: {{req_order.type}}, Description: {{req_order.description}}</p>
+    {% endif %}
+
+    <hr>
+
+    <p> See All Orders: </p>
+    <form action="#" method="post">
+        <p><input type = "submit" name = "see_all" value = "See All Orders" /></p>
+    </form>
+    {% if all_orders: %}
+        {% for order in all_orders %}
+            <p>ID: {{order._id}}, User ID: {{order.user_id}}, Type: {{order.type}}, Description: {{order.description}}</p>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

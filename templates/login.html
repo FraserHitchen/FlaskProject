@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Login Page{% endblock %}
+{% block content %}
+<form action="#" method="post">
+    <p>Name:</p>
+    <p><input type = "text" name = "name" required/></p>
+    <p>Password:</p>
+    <p><input type = "password" name = "password" required/></p>
+    <p><input type = "submit" value = "submit" /></p>
+
+</form>
+<a href="../register">
+   <p>No account? Register here!<p/>
+</a>
+{% endblock %}
