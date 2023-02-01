@@ -67,6 +67,6 @@ Sorting the requirements by level:
 
 -   System Testing
 	- The UI is intuitive to use.
-    	- The system works under load.
+	- The system works under load.
 	- All functions give the correct responses.
 	- User information is kept securely.
