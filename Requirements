@@ -1,0 +1,52 @@
+
+# Requirements
+## Stakeholders and Requirements:
+-   Users
+	-   Want to be able to order quickly so quick account creation is a must.
+	-   Want their passwords and any other private information stored securely.
+	-   Want to be able to update their information easily.
+	-   Want to add or update and order easily.
+
+-   Admins
+	-   Want to be able to get information on all users or specific users quickly no matter how many users there are.
+	-   Want to be able to get information on all orders of a specific user quickly no matter how many orders they have.
+	-   Want to be able to delete users.
+    
+With these in mind we can sort these requirements by level:
+
+### Functional Testing
+-   Unit Testing
+	-   Users
+		-   Will be able to make an account. 
+		-   Will be able to login to their account. 
+		-   Will be able to view their own account information. 
+		-   Will be able to update account information.  
+		-   Will be able to add an order. 
+		-   Will be able to update their own orders. 
+		-   Will be able to delete their own orders.
+
+	-   Admins
+		-   Will be able to get information on all users.
+		-   Will be able to get information on a specific user. 
+		-   Will be able to delete users.  
+		-   Will be able to get information on all orders of a specific user.  
+		-   Will be able to get information on a specific order. 
+		-   Will be able to delete orders. 
+		-   Will be able to edit orders.
+	-  Database
+		- Able to add records.
+		- Able to edit records.
+		- Able to delete records.
+		
+-   Integration Testing
+	- Registered users are added to a database.
+	- Logging in validates the users password again one stored in the databse.
+	- User information in the database can be edited through the UI.
+	- Placed orders are added to the database.
+	- Orders in the database can be edited by users and admins.
+
+-   System Testing
+	- The UI is intuitive to use.
+    	- The system works under load.
+	- All functions give the correct responses.
+	- User information is kept securely.
